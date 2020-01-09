@@ -1,0 +1,12 @@
+#!/Users/austinpeel/github/task_pshtt-d8be2893-8453-4bf4-b83e-25f523907fbe/test/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'sslyze==2.1.4','console_scripts','sslyze'
+__requires__ = 'sslyze==2.1.4'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('sslyze==2.1.4', 'console_scripts', 'sslyze')()
+    )
